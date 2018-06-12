@@ -7,3 +7,7 @@
 # pipenv
 .venv/
 .env
+
+# CoreML model
+*.mlmodel
+
