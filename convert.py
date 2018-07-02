@@ -15,7 +15,11 @@ def main():
                                                  input_names='image',
                                                  image_input_names='image',
                                                  output_names=['classLabelProbs', 'classLabel'],
-                                                 class_labels=args.label)
+                                                 class_labels=args.label,
+                                                 image_scale=2/255.0,
+                                                 red_bias=-1,
+                                                 green_bias=-1,
+                                                 blue_bias=-1)
     model.save(args.output)
 
 
